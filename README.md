@@ -33,7 +33,7 @@ yii migrate
 This will generate the user table in your database.
 
 Now, Go to 
-http://localhost/practice/ows-application/frontend/web/index.php?r=site%2Fsignup 
+http://localhost/ows-application/frontend/web/index.php?r=site%2Fsignup 
 
 And create a user with 
 username: testuser
@@ -45,7 +45,6 @@ Now, you can login into the application using these credentials.
 ## Enabling Pretty URLs 
 
 Currently, the URL looks like:
-http://admin.ows-application.com/index.php?r=site%2Flogin
 http://localhost/ows-application/backend/web/index.php?r=site%2Flogin
 but we want it to be as follows:
 http://localhost/ows-application/backend/web/login
@@ -75,7 +74,7 @@ RewriteRule . index.php
 Do the same in frontend application.
 
 ## Virtual Hosts 
-Copy the the following in your httpd-vhosts file, most likely on 'xampp\apache\conf\extra\httpd-vhosts'
+Copy the following in your httpd-vhosts file, most likely on 'xampp\apache\conf\extra\httpd-vhosts'
 (Make sure to change the DocumentRoot to set it as your own web root directory)
 
 ````
